@@ -7,17 +7,16 @@ A simple python program that extracts all the files from a directory. (Not inclu
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install foobar
+pip install unpacker
 ```
 
 ## Usage
 
 ```python
-import foobar
+from unpacker import FileUnpack
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+files_init = FileUnpack(input_path, output_path) # Initializes the unpacker
+files_init.unpack() # Imports all the files in the input dir into the output dir
 ```
 
 ## Contributing
